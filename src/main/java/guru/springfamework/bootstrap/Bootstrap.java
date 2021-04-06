@@ -7,9 +7,6 @@ import guru.springfamework.repositories.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 9/24/17.
- */
 @Component
 public class Bootstrap implements CommandLineRunner{
 

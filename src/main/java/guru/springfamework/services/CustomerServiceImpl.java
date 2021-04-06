@@ -8,9 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Created by jt on 9/27/17.
- */
+
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
