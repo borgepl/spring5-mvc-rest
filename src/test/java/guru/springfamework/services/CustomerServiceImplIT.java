@@ -21,9 +21,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.assertThat;
 
-/**
- * Created by jt on 10/3/17.
- */
+
 @RunWith(SpringRunner.class)
 @DataJpaTest
 public class CustomerServiceImplIT {

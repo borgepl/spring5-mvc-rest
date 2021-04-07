@@ -16,14 +16,11 @@ import java.util.stream.Collectors;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-    private CustomerMapper customerMapper;
-    private CustomerRepository customerRepository;
-    @Autowired
-    public void setCustomerMapper(CustomerMapper customerMapper) {
+    private final CustomerMapper customerMapper;
+    private final CustomerRepository customerRepository;
+
+    public CustomerServiceImpl(CustomerMapper customerMapper, CustomerRepository customerRepository) {
         this.customerMapper = customerMapper;
-    }
-    @Autowired
-    public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 
