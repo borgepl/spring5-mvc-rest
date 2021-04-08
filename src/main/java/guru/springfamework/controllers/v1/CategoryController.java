@@ -4,8 +4,6 @@ import guru.springfamework.api.v1.model.CategoryDTO;
 import guru.springfamework.api.v1.model.CatorgoryListDTO;
 import guru.springfamework.services.CategoryService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -22,7 +20,7 @@ public class CategoryController {
 
     @GetMapping("/categories")
     @ResponseStatus(HttpStatus.OK)
-    public CatorgoryListDTO getallCatetories(){
+    public CatorgoryListDTO getAllCategories(){
 
         return new CatorgoryListDTO(categoryService.getAllCategories());
     }
